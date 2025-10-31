@@ -18,17 +18,16 @@ int main()
     float superpoder_carta2;
 
     // operacoes densidade
-    float densidade_carta1 = carta1_populacao / carta1_area;
-    float densidade_carta2 = carta2_populacao / carta2_area;
-
+ 
     // Calcular o PIB per Capita
-    float PPC1 = carta1_pib / carta1_populacao;
-    float PPC2 = carta2_pib / carta2_populacao;
+  
 
     int opcao;
 
     printf("Digite 1 para cadastrar uma nova Carta \n ou 2 para usar cartas cadastradas");
-    scanf("%d", opcao);
+    scanf("%d", &opcao);
+     float PPC1 = carta1_pib / carta1_populacao;
+     float PPC2 = carta2_pib / carta2_populacao;
 
     switch (opcao)
     {
@@ -50,7 +49,8 @@ int main()
         scanf("%lf", &carta1_pib);
         printf("Número de Pontos Turísticos: ");
         scanf("%d", &carta1_pontos_turisticos);
-
+        float densidade_carta1 = carta1_populacao / carta1_area;
+        
         float superpoder_carta1 = (carta1_populacao + carta1_area + carta1_pib + carta1_pontos_turisticos + PPC1) / densidade_carta1;
 
         // inserir dados carta 2
@@ -70,6 +70,8 @@ int main()
         printf("Número de Pontos Turísticos: ");
         scanf("%d", &carta2_pontos_turisticos);
 
+        
+         float densidade_carta2 = carta2_populacao / carta2_area;
         float superpoder_carta2 = (carta2_populacao + carta2_area + carta2_pib + carta2_pontos_turisticos + PPC2) / densidade_carta2;
 
         printf("Cartas cadastradas com sucesso!\n");
