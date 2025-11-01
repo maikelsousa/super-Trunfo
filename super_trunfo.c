@@ -155,11 +155,11 @@ int main()
         
         if (carta1_populacao > carta2_populacao)
         {
-            printf("População: Carta 1 venceu (%d > %d)\n", carta1_populacao, carta2_populacao);
+            printf("População: Carta 1 venceu , "%s" (%d > %d)\n", carta1_cidade, carta1_populacao, carta2_populacao);
         }
         else if (carta1_populacao < carta2_populacao)
         {
-            printf("População: Carta 2 venceu (%d > %d)\n", carta2_populacao, carta1_populacao);
+            printf("População: Carta 2 venceu , "%s" (%d > %d)\n", carta2_cidade, carta2_populacao, carta1_populacao);
         }
         else
         {
@@ -168,11 +168,11 @@ int main()
 
         if (carta1_area > carta2_area)
         {
-            printf("Área: Carta 1 venceu (%.2f km² > %.2f km²)\n", carta1_area, carta2_area);
+            printf("Área: Carta 1 venceu , \"%s\" (%.2f km² > %.2f km²)\n", carta1_cidade, carta1_area, carta2_area);
         }
         else if (carta1_area < carta2_area)
         {
-            printf("Área: Carta 2 venceu (%.2f km² > %.2f km²)\n", carta2_area, carta1_area);
+            printf("Área: Carta 2 venceu , \"%s\" (%.2f km² > %.2f km²)\n", carta2_cidade, carta2_area, carta1_area);
         }
         else
         {
@@ -181,11 +181,11 @@ int main()
         
         if (carta1_pib > carta2_pib)
         {
-            printf("PIB: Carta 1 venceu (%.2f > %.2f bilhões)\n", carta1_pib, carta2_pib);
+            printf("PIB: Carta 1 venceu, \"%s\" (%.2f > %.2f bilhões)\n", carta1_cidade, carta1_pib, carta2_pib);
         }
         else if (carta1_pib < carta2_pib)
         {
-            printf("PIB: Carta 2 venceu (%.2f > %.2f bilhões)\n", carta2_pib, carta1_pib);
+            printf("PIB: Carta 2 venceu, \"%s\" (%.2f > %.2f bilhões)\n", carta2_cidade, carta2_pib, carta1_pib);
         }
         else
         {
@@ -194,11 +194,11 @@ int main()
         
         if (carta1_pontos_turisticos > carta2_pontos_turisticos)
         {
-            printf("Pontos Turísticos: Carta 1 venceu (%d > %d)\n", carta1_pontos_turisticos, carta2_pontos_turisticos);
+            printf("Pontos Turísticos: Carta 1 venceu, \"%s\" (%d > %d)\n", carta1_cidade, carta1_pontos_turisticos, carta2_pontos_turisticos);
         }
         else if (carta1_pontos_turisticos < carta2_pontos_turisticos)
         {
-            printf("Pontos Turísticos: Carta 2 venceu (%d > %d)\n", carta2_pontos_turisticos, carta1_pontos_turisticos);
+            printf("Pontos Turísticos: Carta 2 venceu, \"%s\" (%d > %d)\n", carta2_cidade, carta2_pontos_turisticos, carta1_pontos_turisticos);
         }
         else
         {
@@ -207,11 +207,11 @@ int main()
         
         if (superpoder_carta1 > superpoder_carta2)
         {
-            printf("Super Poder: Carta 1 venceu!\n");
+            printf("Super Poder: Carta 1 venceu, \"%s\"!\n", carta1_cidade);
         }
         else if (superpoder_carta1 < superpoder_carta2)
         {
-            printf("Super Poder: Carta 2 venceu!\n");
+            printf("Super Poder: Carta 2 venceu, \"%s\"!\n", carta2_cidade);
         }
         else
         {
@@ -277,11 +277,11 @@ int main()
 
             if (poder_total_carta1 > poder_total_carta2)
             {
-                printf("\nCarta 1 venceu com poder total %.2f contra %.2f!\n", poder_total_carta1, poder_total_carta2);
+                printf("\nCarta 1 venceu, \"%s\" com poder total %.2f contra %.2f!\n", carta1_cidade, poder_total_carta1, poder_total_carta2);
             }
             else if (poder_total_carta1 < poder_total_carta2)
             {
-                printf("\nCarta 2 venceu com poder total %.2f contra %.2f!\n", poder_total_carta2, poder_total_carta1);
+                printf("\nCarta 2 venceu, \"%s\" com poder total %.2f contra %.2f!\n", carta2_cidade, poder_total_carta2, poder_total_carta1);
             }
             else
             {
